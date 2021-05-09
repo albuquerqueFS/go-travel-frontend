@@ -15,7 +15,7 @@ import Navbar from './components/Organisms/Navbar/Navbar';
 import PostMap from './components/Molecules/PostMap';
 
 const henrique_backend = 'http://52.73.248.96:8080'
-const kaique_backend = 'http://54.159.50.114:8080'
+const kaique_backend = 'http://34.230.250.146:8080'
 const heroku_backend = 'https://go-travel-ads1.herokuapp.com'
 const localhost = 'http://localhost:8080'
 
