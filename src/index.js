@@ -14,7 +14,7 @@ import Axios from 'axios';
 import Navbar from './components/Organisms/Navbar/Navbar';
 //Axios.defaults.baseURL = 'http://localhost:8080';
 //  Axios.defaults.baseURL = 'https://go-travel-ads1.herokuapp.com';
- Axios.defaults.baseURL = 'http://54.159.50.114:8080';
+Axios.defaults.baseURL = 'http://34.230.250.146:8080';
 
 function Index() {
   const initialState = {
