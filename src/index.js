@@ -12,9 +12,19 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { useImmerReducer } from 'use-immer';
 import Axios from 'axios';
 import Navbar from './components/Organisms/Navbar/Navbar';
-//Axios.defaults.baseURL = 'http://localhost:8080';
-//  Axios.defaults.baseURL = 'https://go-travel-ads1.herokuapp.com';
- Axios.defaults.baseURL = 'http://54.159.50.114:8080';
+import PostMap from './components/Molecules/PostMap';
+
+const henrique_backend = 'http://52.73.248.96:8080'
+const kaique_backend = 'http://54.159.50.114:8080'
+const heroku_backend = 'https://go-travel-ads1.herokuapp.com'
+const localhost = 'http://localhost:8080'
+
+Axios.defaults.baseURL = henrique_backend;
+
+const center = {
+  lat: -23.5489,
+  lng: -46.6388
+}
 
 function Index() {
   const initialState = {
@@ -92,6 +102,7 @@ function Index() {
 
           <Switch>
             <Route path="/" exact>
+              <PostMap center={center}></PostMap>
               <Institucional />
             </Route>
             <Route path="/home" exact>

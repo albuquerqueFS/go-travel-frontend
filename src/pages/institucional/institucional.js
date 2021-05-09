@@ -5,6 +5,7 @@ import ContainerKnowMore from '../../components/Organisms/ContainerKnowMore';
 import ContainerWhiteKnowMore from '../../components/Organisms/ContainerWhiteKnowMore';
 import DispatchContext from '../../DispatchContext';
 import Footer from '../../components/Organisms/Footer/Footer';
+import PostMap from '../../components/Molecules/PostMap';
 
 const Institucional = () => {
   const appDispatch = useContext(DispatchContext);

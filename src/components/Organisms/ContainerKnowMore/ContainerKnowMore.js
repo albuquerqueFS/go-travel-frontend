@@ -2,6 +2,12 @@ import React from 'react';
 import { ContainerInfo, Container, Title, TitleWrapper, InfoWrapper } from './ContainerKnowMore.style';
 import InfoKnowMore from '../../Molecules/InfoKnowMore';
 import { ReactComponent as Image } from '../../../assets/carro-viagem.svg';
+import PostMap from '../../Molecules/PostMap';
+
+const center = {
+  lat: -23.5489,
+  lng: -46.6388
+}
 
 const ContainerKnowMore = ({ titleColorInfo, textTitleInfo, textColorInfo, textInfo, textTitleInfo2, textInfo2 }) => (
   <ContainerInfo>
