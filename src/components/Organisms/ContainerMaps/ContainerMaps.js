@@ -351,7 +351,8 @@ const ContainerMaps = () => {
 
   return (
     <MapWrapper>
-      <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} libraries={libraries}>
+      {/* <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} libraries={libraries}> */}
+      <LoadScript googleMapsApiKey={"AIzaSyCFyhiyefx4xg_srN1ptjQBLkvDbCR82-s"} libraries={libraries}>
         <div className="divider">
           <div className="formWrapper">
             <div className="form">

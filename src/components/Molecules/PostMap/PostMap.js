@@ -127,7 +127,8 @@ function PostMap({ data, center }) {
 
   return (
     <div style={{ width: '100%', height: '100%' }}>
-      <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} libraries={libraries}>
+      {/* <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} libraries={libraries}> */}
+      <LoadScript googleMapsApiKey={"AIzaSyCFyhiyefx4xg_srN1ptjQBLkvDbCR82-s"} libraries={libraries}>
         <GoogleMap mapContainerStyle={mapContainerStyle} onLoad={mapOnLoad} center={center} zoom={14} options={options}>
           {local ? (
             local.map((a, ind) => {

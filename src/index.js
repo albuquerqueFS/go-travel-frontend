@@ -102,7 +102,7 @@ function Index() {
 
           <Switch>
             <Route path="/" exact>
-              <PostMap center={center}></PostMap>
+              {/* <PostMap center={center}></PostMap> */}
               <Institucional />
             </Route>
             <Route path="/home" exact>
