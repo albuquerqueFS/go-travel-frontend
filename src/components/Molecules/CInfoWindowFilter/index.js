@@ -11,7 +11,7 @@ const CInfoWindowFilter = (props) => {
     setImage(placeData.imageURL);
   }, []);
 
-  placeData.laLng.lat += 0.00078;
+  placeData.latLng.lat += 0.00078;
 
   return (
     <InfoWindow

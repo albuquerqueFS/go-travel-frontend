@@ -29,7 +29,7 @@ const options = {
 
 const ContainerMaps = () => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: 'AIzaSyCFyhiyefx4xg_srN1ptjQBLkvDbCR82-s',
     libraries,
   });
   const [markers, setMarkers] = useState([]);
