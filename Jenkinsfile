@@ -1,15 +1,19 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:lts-buster-slim' 
-            args '-p 3000:3000' 
-        }
+  agent any
+  tools {nodejs "nodejs"}
+  stages {
+    stage("Build") {
+      steps {
+        sh "sudo npm install"
+        sh "sudo npm run build"      
+      }
     }
-    stages {
-        stage('Build') { 
-            steps {
-                sh 'npm install' 
-            }
-        }
+    stage("Deploy") {
+      steps {
+        sh "sudo rm -rf /var/www/go-travel-frontend"
+        sh "sudo cp -r ${WORKSPACE}/build/ /var/www/go-travel-frontend/"
+      }
     }
+  }
 }
+
