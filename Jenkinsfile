@@ -4,6 +4,7 @@ pipeline {
   stages {
     stage("Build") {
       steps {
+        sh "sudo export PATH=$PATH:/root/.nvm/versions/node/v16.1.0/bin/npm"
         sh "sudo npm install"
         sh "sudo npm run build"      
       }
